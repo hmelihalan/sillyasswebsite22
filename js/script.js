@@ -4,10 +4,10 @@ function sayYes() {
   document.getElementById("responseMessage").textContent = "Yay! Can’t wait for our date! ❤️";
   document.getElementById("responseMessage").style.display = "block";
 
-  // Show the YouTube video in a responsive container when "Yes" is clicked
+  // Show the YouTube Shorts video in a responsive container when "Yes" is clicked
   document.getElementById("gifContainer").innerHTML = `
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/r9i180AQ8y0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/3NSBuZ0mlNo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   `;
 }
@@ -18,10 +18,10 @@ function sayNo() {
   document.getElementById("responseMessage").textContent = "Nuh-uh 🤓☝️ ,you can’t say no! Try again! 😊";
   document.getElementById("responseMessage").style.display = "block";
 
-  // Show a YouTube video when "No" is clicked
+  // Show the YouTube Shorts video in a responsive container when "No" is clicked
   document.getElementById("gifContainer").innerHTML = `
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/bEvOrZpX5F0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/oW2cJCemERQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   `;
 }
