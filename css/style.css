@@ -1,0 +1,165 @@
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #c3b091; /* Set background color to khaki */
+  color: #46295a; /* Text color changed to #46295a */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  animation: fadeInBody 1.5s ease-out; /* Fade-in effect for body */
+}
+
+/* Fade-In Animation for Body */
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Main Content Container */
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  max-width: 600px;
+  width: 100%;
+  opacity: 0; /* Start with container hidden */
+  transform: translateY(20px); /* Start below the view */
+  animation: fadeInUp 1s ease-out 0.5s forwards; /* Animate the container to fade and slide up */
+}
+
+/* Fade-In Up Animation for Container */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 3rem;
+  color: #46295a; /* Heading text color */
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInMessage 1.5s ease-out 0.5s forwards; /* Heading fade-in effect */
+}
+
+/* Button Styles */
+button {
+  background-color: #46295a; /* Button background color */
+  color: white; /* Text color inside button */
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 10px;
+  opacity: 0; /* Start with buttons hidden */
+  transform: translateY(20px); /* Start below the view */
+  animation: fadeInButton 1s ease-out 1s forwards; /* Animate buttons after container */
+}
+
+/* Button Animation */
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button:hover {
+  background-color: #6a4c7b; /* Lighter shade on hover */
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Response Message Styles */
+.response-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #46295a;
+  margin-top: 20px;
+  animation: fadeInMessage 1.5s ease-in-out;
+}
+
+/* Fade-In Animation for Messages */
+@keyframes fadeInMessage {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Video Container to maintain aspect ratio */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 800px; /* Limit the video size */
+  margin: 0 auto; /* Center the video */
+}
+
+/* Make sure the iframe is filling the container properly */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  .gif-display {
+    width: 300px; /* Adjusted size for smaller screens */
+  }
+
+  .video-container {
+    max-width: 100%;
+  }
+}
