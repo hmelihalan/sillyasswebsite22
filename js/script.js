@@ -7,7 +7,7 @@ function sayYes() {
   // Show the YouTube video in a responsive container when "Yes" is clicked
   document.getElementById("gifContainer").innerHTML = `
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/GjFVG_9hMbo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/watch?v=r9i180AQ8y0&ab_channel=t%C3%BCrki%C5%9Fimim?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   `;
 }
@@ -21,7 +21,7 @@ function sayNo() {
   // Show a YouTube video when "No" is clicked
   document.getElementById("gifContainer").innerHTML = `
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/LOMrEEAM1xA?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/watch?v=bEvOrZpX5F0&ab_channel=drogba?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   `;
 }
