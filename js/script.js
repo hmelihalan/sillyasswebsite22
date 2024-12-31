@@ -1,7 +1,7 @@
 // Function for the "Yes" button
 function sayYes() {
   // Show the "Yay" message when clicking Yes
-  document.getElementById("responseMessage").textContent = "Yay! Can’t wait for our date! ❤️";
+  document.getElementById("responseMessage").textContent = "Yay! Can’t wait for our date!";
   document.getElementById("responseMessage").style.display = "block";
 
   // Show the YouTube Shorts video in a responsive container when "Yes" is clicked
